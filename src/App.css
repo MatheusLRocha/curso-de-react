@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background: #0D5C63;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+
+  
+}
+
+.g-container {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title {
+  font-size: 30px;
+  color: #78CDD7;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background: #78CDD7;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.226));
+  list-style: none;
+
+  & li {
+    display: flex;
+    gap: 15px;
+  }
+
+  & button.tarefa {
+    color: white;
+    padding: 10px;
+    background: #44A1A0;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  & button.icon {
+    background: #44A1A0;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+  }
+}
+
+.lined {
+  text-decoration: line-through;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container-addTask, .container-task {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background: #78CDD7;
+  border-radius: 5px;
+  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.226));
+  list-style: none;
+
+  & input {
+    border: 2px solid #44A1A0;
+    padding: 12px 8px;
+    border-radius: 5px;
+
+    &:focus {
+      outline: 2px solid #44A1A0;
+    }
+  }
+
+  & .btnAdd {
+    background: #44A1A0;
+    color: white;
+    padding: 12px 8px;
+    border-radius: 5px;
+    border: none;
+  }
+}
+
+.h-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 24px;
+
+  & button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: transparent;
+    border: none;
+    color: #78CDD7;
+  }
+}
