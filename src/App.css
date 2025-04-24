@@ -52,6 +52,9 @@ ul {
     border: none;
     width: 100%;
     text-align: left;
+    display: flex;
+    
+    align-items: center;
   }
 
   & button.icon {
